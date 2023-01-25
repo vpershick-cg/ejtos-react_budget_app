@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Currency = () => {
-    const { currency } = useContext(AppContext);
+    const { currency, currencyLabel } = useContext(AppContext);
     const { dispatch } = useContext(AppContext);
 
     const handleSetCurrency = (currency) => {
@@ -13,11 +13,11 @@ const Currency = () => {
     };
 
     return (
-        <div class="currency-menu">  
-            <select className="btn btn-success btn-currency dropdown-toggle" id="currency"
+        <div className="currency-menu">  
+            <select className="btn btn-currency dropdown-toggle" id="currency"
                 onChange={(event) => handleSetCurrency(event.target.value)}>
-                Currency ({currency})
-                {/*<option defaultValue> Currency ({currency}) </option>*/}
+                {/* Currency ({currency} {currencyName}) */}
+                <option defaultValue> Currency ({currency} {currencyLabel}) </option>
                 <option value="$"> $ Dollar </option>
                 <option value="£"> £ Pound </option>
                 <option value="€"> € Euro </option>
