@@ -14,10 +14,10 @@ const Currency = () => {
 
     return (
         <div className="currency-menu">  
-            <select className="btn btn-currency dropdown-toggle" id="currency"
+            <select className="btn btn-success dropdown-toggle" id="currency"
                 onChange={(event) => handleSetCurrency(event.target.value)}>
-                {/* Currency ({currency} {currencyName}) */}
-                <option defaultValue> Currency ({currency} {currencyLabel}) </option>
+                Currency ({currency} {currencyLabel})
+                <option defaultValue selected disabled hidden> Currency ({currency} {currencyLabel}) </option>
                 <option value="$"> $ Dollar </option>
                 <option value="£"> £ Pound </option>
                 <option value="€"> € Euro </option>
