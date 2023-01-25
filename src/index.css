@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*
+.currency-menu > select {
+    background-color: darkgreen
+}
+
+.currency-menu > select:active {
+    background-color: lightgreen;
+}
+
+currency-menu option:hover {
+    background-color: white;
+}
+*/
